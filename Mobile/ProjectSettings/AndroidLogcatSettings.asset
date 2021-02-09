@@ -1,0 +1,329 @@
+{
+    "m_SelectedDeviceId": "R58M55HFXSJ",
+    "m_SelectedPackage": {
+        "deviceId": "R58M55HFXSJ",
+        "name": "com.DefaultCompany.Mobile",
+        "processId": 23113,
+        "exited": true
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 1210,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.sec.android.app.launcher",
+            "processId": 5577,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 5901,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 8747,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 12928,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 15132,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 17498,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 19181,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 20925,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 22109,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 25336,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 27458,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 29483,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 31212,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 15815,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 17732,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 19566,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 22176,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 24091,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 10956,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 25244,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 7542,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 2490,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 9855,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 10003,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 11859,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 14423,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 16297,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 17977,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 23334,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 27038,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 28878,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 29998,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 32650,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 1454,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 2282,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 4291,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 10659,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 14624,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 16113,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 17902,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 23113,
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.stove.epic7.google",
+            "processId": 2515,
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.stove.epic7.google",
+            "processId": 3658,
+            "exited": true
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 1,
+        "Behavior": 1
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}
