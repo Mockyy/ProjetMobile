@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
         phase = PlayPhase.Building;
 
         DontDestroyOnLoad(this.gameObject);
+
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
     }
 
     public void ChangePhase()

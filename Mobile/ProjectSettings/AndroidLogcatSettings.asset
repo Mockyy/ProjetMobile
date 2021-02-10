@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R58M55HFXSJ",
         "name": "com.DefaultCompany.Mobile",
-        "processId": 23113,
+        "processId": 22241,
         "exited": true
     },
     "m_SelectedPriority": 0,
@@ -258,6 +258,54 @@
             "deviceId": "R58M55HFXSJ",
             "name": "com.DefaultCompany.Mobile",
             "processId": 23113,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 14372,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 15126,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 5102,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 10512,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 12379,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 17181,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 20277,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 22241,
             "exited": true
         },
         {

@@ -303,7 +303,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60298
+  m_Name: pb_Mesh24060
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2025,7 +2025,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60652
+  m_Name: pb_Mesh24558
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7438,6 +7438,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flat_Start
       objectReference: {fileID: 0}
+    - target: {fileID: 2580316381688493999, guid: 817cb8e10bfbb8e4698e3601269f89b9,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 5715301729305206703, guid: 81ade15fec544074588627d13e628dd8,
+        type: 3}
     - target: {fileID: 2712977039555640477, guid: 817cb8e10bfbb8e4698e3601269f89b9,
         type: 3}
       propertyPath: m_Mesh

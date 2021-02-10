@@ -54,7 +54,6 @@ public class TouchInput : MonoBehaviour
         {
             Ray clicRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-
             if (Physics.Raycast(clicRay, out RaycastHit hit))
             {
                 if (hit.transform.tag == "Movable_Obstacle")
