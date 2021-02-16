@@ -48,8 +48,6 @@ public class TouchInput : MonoBehaviour
         }
 #endif
 
-#if UNITY_EDITOR
-
         if (Input.GetMouseButtonDown(0))
         {
             Ray clicRay = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -69,10 +67,8 @@ public class TouchInput : MonoBehaviour
             touchedObject.GetComponent<MeshRenderer>().material.color = Color.grey;
             touchedObject = null;
         }
-#endif
     }
 
-#if UNITY_EDITOR
     private void OnMouseDrag()
     {
         if (touchedObject != null)
@@ -83,5 +79,4 @@ public class TouchInput : MonoBehaviour
             touchedObject.transform.position = mouseWorldPos + offset;
         }
     }
-#endif
 }

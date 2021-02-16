@@ -5,13 +5,12 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] private Transform target;
-    [SerializeField] private Vector3 distance;
+    private Vector3 relativePos;
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.LookAt(target.transform);
-        transform.position = target.transform.position + distance;
+        transform.position = target.transform.position;
     }
 
     public void SetTarget(Transform t)

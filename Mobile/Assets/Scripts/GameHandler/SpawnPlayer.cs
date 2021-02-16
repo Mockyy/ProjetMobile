@@ -26,6 +26,7 @@ public class SpawnPlayer : MonoBehaviour
         playerObject = Instantiate(player, transform.position, transform.rotation) as GameObject;
         camObject = Instantiate(cam, transform.position, transform.rotation) as GameObject;
         camObject.GetComponent<CameraFollow>().SetTarget(playerObject.transform);
+        playerObject.GetComponent<GyroscopeInput>().SetCameraPivot(camObject.transform);
     }
 
     private void Despawn()
