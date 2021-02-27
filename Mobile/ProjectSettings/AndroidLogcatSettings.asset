@@ -1,19 +1,13 @@
 {
     "m_SelectedDeviceId": "R58M55HFXSJ",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
-        "exited": false
+        "deviceId": "R58M55HFXSJ",
+        "name": "com.DefaultCompany.Mobile",
+        "processId": 27729,
+        "exited": true
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "R58M55HFXSJ",
-            "name": "com.DefaultCompany.Mobile",
-            "processId": 30430,
-            "exited": true
-        },
         {
             "deviceId": "R58M55HFXSJ",
             "name": "com.sec.android.app.launcher",
@@ -23,37 +17,49 @@
         {
             "deviceId": "R58M55HFXSJ",
             "name": "com.DefaultCompany.Mobile",
-            "processId": 32642,
+            "processId": 27849,
             "exited": true
         },
         {
             "deviceId": "R58M55HFXSJ",
             "name": "com.DefaultCompany.Mobile",
-            "processId": 18103,
+            "processId": 30266,
             "exited": true
         },
         {
             "deviceId": "R58M55HFXSJ",
             "name": "com.DefaultCompany.Mobile",
-            "processId": 20347,
+            "processId": 31415,
             "exited": true
         },
         {
             "deviceId": "R58M55HFXSJ",
             "name": "com.DefaultCompany.Mobile",
-            "processId": 13871,
+            "processId": 536,
             "exited": true
         },
         {
             "deviceId": "R58M55HFXSJ",
             "name": "com.DefaultCompany.Mobile",
-            "processId": 17540,
+            "processId": 22279,
             "exited": true
         },
         {
             "deviceId": "R58M55HFXSJ",
             "name": "com.DefaultCompany.Mobile",
-            "processId": 19744,
+            "processId": 24590,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 26367,
+            "exited": true
+        },
+        {
+            "deviceId": "R58M55HFXSJ",
+            "name": "com.DefaultCompany.Mobile",
+            "processId": 27729,
             "exited": true
         },
         {
@@ -72,7 +78,13 @@
             "deviceId": "emulator-5554",
             "name": "com.YoStarEN.Arknights",
             "processId": 6893,
-            "exited": false
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.stove.epic7.google",
+            "processId": 3706,
+            "exited": true
         }
     ],
     "m_Tags": {

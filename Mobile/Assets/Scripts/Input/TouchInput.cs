@@ -7,7 +7,18 @@ using UnityEngine.EventSystems;
 
 public class TouchInput : MonoBehaviour
 {
-    private GameObject touchedObject;
+    private GameObject grabbedObj = null;
+    private GameObject[] tiles;
+    private float distanceMax = Mathf.Infinity;
+    private float dist;
+
+    private Plane objPlane;
+    private Vector3 touchOffset;
+
+    private void Start()
+    {
+        tiles = GameObject.FindGameObjectsWithTag("Tile");
+    }
 
     void Update()
     {
@@ -19,31 +30,48 @@ public class TouchInput : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began)
             {
-                Ray touchRay = Camera.main.ScreenPointToRay(touch.position);
+                //Ray touchRay = Camera.main.ScreenPointToRay(touch.position);
+                Ray touchRay = GenerateTouchRay(touch);
 
                 if (Physics.Raycast(touchRay, out RaycastHit hit))
                 {
                     if (hit.transform.CompareTag("Movable_Obstacle"))
                     {
-                        touchedObject = hit.transform.gameObject;
+                        grabbedObj = hit.transform.gameObject;
+                        objPlane = new Plane(Camera.main.transform.right, grabbedObj.transform.position);
+
+                        //Mouse offset
+                        Ray mRay = Camera.main.ScreenPointToRay(touch.position);
+                        float rayDistance;
+                        objPlane.Raycast(mRay, out rayDistance);
+                        touchOffset = grabbedObj.transform.position - mRay.GetPoint(rayDistance);
                     }
                 }
             }
 
-            if (touch.phase == TouchPhase.Ended)
+            if (touch.phase == TouchPhase.Ended && grabbedObj)
             {
-                touchedObject.GetComponent<MeshRenderer>().material.color = Color.grey;
-                touchedObject = null;
+                grabbedObj.GetComponent<MeshRenderer>().material.color = Color.grey;
+                grabbedObj = null;
             }
 
-            if (touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved && touchedObject != null)
+            if ((touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved) && grabbedObj)
             {
-                Vector3 touchedPos = Camera.main.ScreenToWorldPoint(
-                    new Vector3(touch.position.x, touch.position.y, 25));
+                //Vector3 touchedPos = Camera.main.ScreenToWorldPoint(
+                //   new Vector3(touch.position.x, touch.position.y, 25));
 
-                touchedObject.GetComponent<MeshRenderer>().material.color = Color.red;
+                Ray mRay = Camera.main.ScreenPointToRay(touch.position);
+                float rayDistance;
+                if (objPlane.Raycast(mRay, out rayDistance))
+                {
+                    grabbedObj.transform.position = mRay.GetPoint(rayDistance) + touchOffset;
+                }
 
-                touchedObject.transform.position = touchedPos;
+                grabbedObj.GetComponent<MeshRenderer>().material.color = Color.red;
+
+                //grabbedObj.transform.position = touchedPos;
+
+                GetClosestTile();
             }
         }
 #endif
@@ -56,27 +84,64 @@ public class TouchInput : MonoBehaviour
             {
                 if (hit.transform.tag == "Movable_Obstacle")
                 {
-                    touchedObject = hit.transform.gameObject;
-                    touchedObject.GetComponent<MeshRenderer>().material.color = Color.red;
+                    grabbedObj = hit.transform.gameObject;
+                    grabbedObj.GetComponent<MeshRenderer>().material.color = Color.red;
                 }
             }
         }
         
-        if (Input.GetMouseButtonUp(0) && touchedObject != null)
+        if (Input.GetMouseButtonUp(0) && grabbedObj)
         {
-            touchedObject.GetComponent<MeshRenderer>().material.color = Color.grey;
-            touchedObject = null;
+            grabbedObj.GetComponent<MeshRenderer>().material.color = Color.grey;
+            grabbedObj = null;
         }
     }
 
     private void OnMouseDrag()
     {
-        if (touchedObject != null)
+        if (grabbedObj)
         {
             Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector3 offset = touchedObject.transform.position - mouseWorldPos;
+            Vector3 offset = grabbedObj.transform.position - mouseWorldPos;
 
-            touchedObject.transform.position = mouseWorldPos + offset;
+            grabbedObj.transform.position = mouseWorldPos + offset;
         }
+    }
+
+    private Ray GenerateTouchRay(Touch t)
+    {
+        Vector3 touchPosFar = new Vector3(t.position.x, t.position.y, Camera.main.farClipPlane);
+        Vector3 touchPosNear = new Vector3(t.position.x, t.position.y, Camera.main.nearClipPlane);
+        Vector3 touchPosF = Camera.main.ScreenToWorldPoint(touchPosFar);
+        Vector3 touchPosN = Camera.main.ScreenToWorldPoint(touchPosNear);
+
+        Ray mr = new Ray(touchPosN, touchPosF - touchPosN);
+
+        return mr;
+    }
+
+    public Transform GetMovingObject()
+    {
+        return grabbedObj.transform;
+    }
+
+    public GameObject GetClosestTile()
+    {
+        GameObject closestTile = null;
+
+        foreach (GameObject go in tiles)
+        {
+            if (Vector3.Distance(grabbedObj.transform.position, go.transform.position) <= dist)
+            {
+                closestTile.GetComponent<Tile>().SetClosest(false);
+                dist = Vector3.Distance(grabbedObj.transform.position, go.transform.position);
+                closestTile = go;
+            }
+        }
+
+        dist = distanceMax;
+        closestTile.GetComponent<Tile>().SetClosest(true);
+
+        return closestTile;
     }
 }
